@@ -5,7 +5,7 @@ namespace ParallelProgramingWithCS
 {
     public class BasicTask
     {
-        public static void Write(string c)
+        public void Write(string c)
         {
             int x = 0;
 
@@ -16,7 +16,7 @@ namespace ParallelProgramingWithCS
             }
         }
 
-        public static void Main()
+        public void Main()
         {
             Task.Factory.StartNew(() => Write("x"));
 
