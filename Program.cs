@@ -4,7 +4,7 @@ namespace ParallelProgramingWithCS
     {
         public static void Main()
         {
-            var t = new TaskWithReturn();
+            var t = new MultipleCancellationTasks();
             t.Run();
         }
     }
