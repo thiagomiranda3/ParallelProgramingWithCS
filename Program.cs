@@ -4,7 +4,7 @@ namespace ParallelProgramingWithCS
     {
         public static void Main()
         {
-            var t = new MultipleCancellationTasks();
+            var t = new WaitingTimeToPass();
             t.Run();
         }
     }
