@@ -4,7 +4,7 @@ namespace ParallelProgramingWithCS
     {
         public static void Main()
         {
-            var t = new WaitingTimeToPass();
+            var t = new WaitingToFinishTasks();
             t.Run();
         }
     }
