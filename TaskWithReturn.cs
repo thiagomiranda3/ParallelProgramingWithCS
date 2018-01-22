@@ -8,7 +8,6 @@ namespace ParallelProgramingWithCS
         public int Length(string stringToCount)
         {
             Console.WriteLine($"Running task {Task.CurrentId}");
-            var stringSplited = stringToCount.Split();
             
             return stringToCount.Length;
         }
