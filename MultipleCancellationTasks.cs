@@ -13,6 +13,7 @@ namespace ParallelProgramingWithCS
             var preventative = new CancellationTokenSource();
             var emergency = new CancellationTokenSource();
             
+            // Mais de um token será adicionado à Task
             var paranoid = CancellationTokenSource.CreateLinkedTokenSource(
                 planned.Token, preventative.Token, emergency.Token
             );
