@@ -16,9 +16,14 @@ namespace ParallelProgramingWithCS
 
             var t2 = Task.Factory.StartNew(() => Thread.Sleep(3000));
 
+            var t3 = Task.Factory.StartNew(() => Thread.Sleep(2000));
+
             Task.WaitAny(new[] {t, t2}, 1000);
             Console.WriteLine("WaitAny with timespan Finished");
             Console.WriteLine($"t = {t.Status}, t2 = {t2.Status}\n");
+
+            t3.Wait();
+            Console.WriteLine("t3 finished\n");
 
             Task.WaitAny(new[] {t, t2});
             Console.WriteLine("WaitAny Finished");
