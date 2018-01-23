@@ -1,3 +1,5 @@
+using ParallelProgramingWithCS.Basics;
+
 namespace ParallelProgramingWithCS
 {
     public class Program

@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace ParallelProgramingWithCS
+namespace ParallelProgramingWithCS.Basics
 {
     public class TaskWithReturn
     {
