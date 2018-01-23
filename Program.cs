@@ -1,4 +1,5 @@
 using ParallelProgramingWithCS.Basics;
+using ParallelProgramingWithCS.Data_Sharing_and_Synchronization;
 
 namespace ParallelProgramingWithCS
 {
@@ -6,7 +7,7 @@ namespace ParallelProgramingWithCS
     {
         public static void Main()
         {
-            var t = new WaitingToFinishTasks();
+            var t = new BankAccountSynchronizationLock();
             t.Run();
         }
     }
