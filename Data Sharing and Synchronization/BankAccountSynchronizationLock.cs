@@ -5,6 +5,22 @@ using System.Threading.Tasks;
 
 namespace ParallelProgramingWithCS.Data_Sharing_and_Synchronization
 {
+    // Classe sem nenhum tratamento de sincronicidade de threads
+    public class BankAccountSimple
+    {
+        public int Balance { get; set; }
+        
+        public void Deposit(int amount)
+        {
+            Balance += amount;
+        }
+
+        public void Withdraw(int amount)
+        {
+            Balance -= amount;
+        }
+    }
+
     // Utilizando a keyword lock para criar trechos de código atômicos
     public class BankAccountWithLock
     {

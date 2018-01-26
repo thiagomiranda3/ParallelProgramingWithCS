@@ -7,7 +7,7 @@ namespace ParallelProgramingWithCS
     {
         public static void Main()
         {
-            var t = new BankAccountSynchronizationLock();
+            var t = new LockRecursionProblem();
             t.Run();
         }
     }
