@@ -8,7 +8,7 @@ namespace ParallelProgramingWithCS
     {
         public static void Main()
         {
-            var t = new BankAccountMutex();
+            var t = new MultipleProcessRunningMutex();
             t.Run();
         }
     }
