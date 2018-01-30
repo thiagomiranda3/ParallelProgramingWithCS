@@ -1,5 +1,6 @@
 using ParallelProgramingWithCS.Basics;
 using ParallelProgramingWithCS.Data_Sharing_and_Synchronization;
+using ParallelProgramingWithCS.Data_Sharing_and_Synchronization2;
 
 namespace ParallelProgramingWithCS
 {
@@ -7,7 +8,7 @@ namespace ParallelProgramingWithCS
     {
         public static void Main()
         {
-            var t = new LockRecursionProblem();
+            var t = new BankAccountMutex();
             t.Run();
         }
     }
